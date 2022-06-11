@@ -1,9 +1,15 @@
 #include <stdio.h>
-char *variabletype[] = {"char", "unsigned char", "signed char", "int", "unsigned int", "short", "unsigned short", "long", "unsigned long", "long long", "unsigned long long"};
-
-int main() {
-    for (int i = 0; i < 11;++i) {
-	printf("Size of %s is %u\n",variabletype[i], (unsigned int)(sizeof(variabletype[i])));
-    }
-	        return 0;
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (success)
+ */
+int main(void)
+{
+printf("size of a char: %d byte(s)/n", sizeof(char));
+printf("size of int: %d byte(s)/n", sizeof(int));
+printf("size of long int: %d byte(s)/n" sizeof(long int));
+printf("size of long long int: %d byte(s)/n" sizeof(long long int));
+Printf("size of float: %d byte(s)/n" sizeof(float));
+return (0);
 }
