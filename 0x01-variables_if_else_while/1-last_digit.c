@@ -1,3 +1,8 @@
+/*
+ * File: 1-last_digit.c
+ * Aut: Tsinat Kifle Abebaw
+ */
+
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
