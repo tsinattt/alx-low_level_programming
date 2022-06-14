@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * rev_string - reverses a string
@@ -8,24 +8,26 @@ include "main.h"
  */
 void rev_string(char *s)
 {
-	int i = 0;
+	int i;
+	int j;
+	int temp;
+	int length;
 
-	int j = 0;
-
-	char temp[1000];
-
-	while (s[i] != '\0')
+	while (s[i] != 0)
 	{
 		i++;
 	}
 
-	for (; i > 0; i--)
-	{
-		temp[j] = s[i - 1];
-		j++;
-	}
+	length = i;
+	i = 0;
+	j = length - 1;
+
 	while (i < j)
 	{
-		s[i] = temp[i];
+		temp = s[i];
+		s[i] = s[j];
+		s[j] = temp;
 		i++;
+		j--;
+	}
 }
