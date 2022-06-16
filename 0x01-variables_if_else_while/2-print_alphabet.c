@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
 /**
- * main - program that prints the alphabet in lowercase, followed by a new line.
+ * main - program that prints the alphabet in lowercase.
  * You can only use the putchar function is forbidden
  * You can only use putchar twice in your code
  * Return: 0
