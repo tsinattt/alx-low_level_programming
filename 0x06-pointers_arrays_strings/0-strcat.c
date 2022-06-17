@@ -1,28 +1,31 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * _strstr - Entry point
- * @haystack: input
- * @needle: input
- * Return: Always 0 (Success)
+ * _strcat - concatenates two strings
+ * @dest: the first string to be overwritten
+ * @src: the second string to be appended to dest
+ * Description: appends the src string to dest
+ * Return: dest
  */
-char *_strstr(char *haystack, char *needle)
+
+char *_strcat(char *dest, char *src)
 {
-	for (; *haystack != '\0'; haystack++)
+	int i, j;
+
+	i = 0;
+
+	while (dest[i] != '\0')
 	{
-		char *one = haystack;
-		char *two = needle;
-
-		while (*one == *two && *two != '\0')
-		{
-			one++;
-			two++;
-		}
-
-		if (*two == '\0')
-			return (haystack);
+		i++;
 	}
 
-	return (NULL);
+	for (j = 0; src[j] != '\0'; j++)
+	{
+		dest[i] = src[j];
+		i++;
+	}
+
+	dest[i] = src[j];
+
+	return (dest);
 }
