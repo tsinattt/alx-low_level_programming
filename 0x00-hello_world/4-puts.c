@@ -2,7 +2,7 @@
 #include <string.h>
 
 /*
- * main-main function
+ *main - Main function of project
  *
  * Return: return 0
  */
