@@ -1,9 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - a program that prints the alphabet in lowercase,
- * followed by a new line
- * Print all the letters except q and e
+ * main - Print all the letters except q and e
  *
  * Return: return 0
  */
@@ -20,6 +18,6 @@ int main(void)
 		}
 		tsiletter++;
 	}
-	putchar('\n);
+	putchar('\n');
 	return (0);
 }
