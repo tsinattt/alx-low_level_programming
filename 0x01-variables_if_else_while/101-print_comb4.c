@@ -12,16 +12,19 @@ int main(void)
 	{
 		for (k = '0'; k <= '9'; k++)
 		{
-			if (t < k && k < a)
+			for (a = '0'; a <= '9'; a++)
 			{
-				putchar(t);
-				putchar(k);
-				putchar(a);
-
-				if (t != '7')
+				if (t < k && k < a)
 				{
-					putchar(',');
-					putchar(' ');
+					putchar(t);
+					putchar(k);
+					putchar(a);
+
+					if (t != '7')
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
